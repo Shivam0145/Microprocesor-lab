@@ -5,6 +5,7 @@ LXI H,EE00H
     MOV A<M
 NEXT: CMP B
       JC LOOP
+      SUB B
       INR C
       JMP NEXT
 LOOP: STA EE02H
